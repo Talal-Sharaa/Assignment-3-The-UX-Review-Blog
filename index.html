@@ -9,7 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./Assets/style.css" />
     <script
       src="https://kit.fontawesome.com/272206d660.js"
       crossorigin="anonymous"
@@ -18,18 +18,64 @@
   </head>
   <body>
     <nav class="navbar">
-      <span class="logo">The UX Review</span>
+      <div class="logo">
+        <a href="#">The UX <span>Review</span></a>
+      </div>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <li>
+          <a href="#hero">HOME</a>
+          <i class="fa-solid fa-star"></i>
+        </li>
+        <li>
+          <a href="#latestArticles">LATEST ARTICLES</a>
+          <i class="fa-solid fa-star"></i>
+        </li>
+        <li>
+          <a href="#authors">AUTHORS</a>
+          <i class="fa-solid fa-star"></i>
+        </li>
+        <li>
+          <a href="#community">COMMUNITY</a>
+        </li>
       </ul>
       <button class="cta">Subscribe</button>
+      <a class="menu-icon" href="#menu">
+        <i class="fa-solid fa-bars"></i>
+      </a>
+      <div id="menu" class="side-menu">
+        <div class="side-menu-header">
+          <span>menu</span>
+          <a href="#" class="close-btn"><i class="fa-solid fa-times"></i></a>
+        </div>
+        <ul>
+          <li>
+            <a href="#hero">HOME</a>
+            <i class="fa-solid fa-star"></i>
+          </li>
+          <li>
+            <a href="#latestArticles">LATEST ARTICLES</a>
+            <i class="fa-solid fa-star"></i>
+          </li>
+          <li>
+            <a href="#authors">AUTHORS</a>
+            <i class="fa-solid fa-star"></i>
+          </li>
+          <li>
+            <a href="#community">COMMUNITY</a>
+          </li>
+        </ul>
+        <div class="side-menu-subs">
+          <a href=""><i class="fa-solid fa-rocket"></i> SUBSCRIBE NOW</a>
+        </div>
+      </div>
     </nav>
-    <section class="hero">
+    <section id="hero" class="hero">
       <div class="container">
-        <div class="container-content">
-          <span class="trending">🔥 TRENDING NOW</span>
+        <div class="bg-sq bg-sq-1"></div>
+        <div class="bg-sq bg-sq-2"></div>
+        <div class="bg-sq bg-sq-3"></div>
+        <div class="hero-content sm-100 lg-50">
+          <span class="hero-content-span black-span">🔥 TRENDING NOW</span>
           <h2>
             BRUTAL
             <br />
@@ -37,13 +83,29 @@
             <br />
             <span style="color: #155dfc">BOLD IDEAS</span>
           </h2>
+          <p>
+            Raw, unfiltered content about tech, design, and culture. No
+            sugar-coating, just pure truth that hits different.
+          </p>
+          <div class="hero-content-btns">
+            <div class="hero-content-btns-btn">
+              <button class="black-btn">
+                <i class="fa-solid fa-rocket"></i> START READING
+              </button>
+            </div>
+            <div class="hero-content-btns-btn">
+              <button class="white-btn">
+                <i class="fa-solid fa-play"></i> WATCH INTRO
+              </button>
+            </div>
+          </div>
         </div>
-        <div class="container-image">
-          <img
-            src="https://images.unsplash.com/photo-1682685790910-1e3f5c7b6d8e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-            alt="Hero"
-          />
-          <span class="image-caption">FEATURED</span>
+        <div class="hero-img sm-100 lg-50">
+          <div class="hero-img-container">
+            <img src="images/hero-img.png" alt="hero-img" />
+          </div>
+
+          <span>FEATURED</span>
         </div>
       </div>
     </section>
